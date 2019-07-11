@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../form/kategorie_form.dart';
 
 class Kategorie extends StatelessWidget {
   final String pageTitle;
@@ -10,9 +11,13 @@ class Kategorie extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(pageTitle),
+        backgroundColor: Colors.redAccent,
       ),
       body: Center(
-        child: Text(pageTitle),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 25.0),
+          child: KategorieForm(),
+        ),
       ),
     );
   }

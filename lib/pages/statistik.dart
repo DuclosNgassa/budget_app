@@ -10,6 +10,7 @@ class Statistik extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(pageTitle),
+        backgroundColor: Colors.redAccent,
       ),
       body: Center(
         child: Text(pageTitle),
